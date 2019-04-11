@@ -1,0 +1,23 @@
+{
+  "name": "split-shard",
+  "version": "1.0.0",
+  "description": "A Shard Splitting Library for Discord.jS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuxyDev/split-shard.git"
+  },
+  "keywords": [
+    "discord.js",
+    "sharding"
+  ],
+  "author": "TuxyDev, DieselGaming67",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/TuxyDev/split-shard/issues"
+  },
+  "homepage": "https://github.com/TuxyDev/split-shard#readme"
+}
