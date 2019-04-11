@@ -11,8 +11,6 @@ class InputHandler extends EventEmmiter {
 
         const stdin = process.openStdin();
 
-        
-
         process.stdout.write(`split-shard > `)
 
         stdin.addListener('data', text => {
@@ -20,12 +18,15 @@ class InputHandler extends EventEmmiter {
             const input = text.toString().trim()
             this.emit("input", input);
 
-            stdin.pause();
+            process.stdout.write(`split-shard > `);
+
+            //stdin.pause();
 
         });
 
     }
 
 }
+
 
 module.exports = InputHandler;

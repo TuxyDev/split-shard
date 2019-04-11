@@ -1,5 +1,5 @@
 module.exports = {
-    Terminal: require("./src/console/Console")
+    Terminal: require("./src/structures/Instance")
 }
 
 exports.version = "1.0.0";
