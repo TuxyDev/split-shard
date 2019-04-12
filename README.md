@@ -1,4 +1,4 @@
-<img href="https://discord.gg/XsBXVxF" src="https://img.shields.io/discord/566198007310188554.svg?style=for-the-badge">
+<img href="https://discord.gg/XsBXVxF" src="https://img.shields.io/discord/566198007310188554.svg?style=for-the-badge"/>
 <br>
 # Shard Splitter
 **Our Aim:**
