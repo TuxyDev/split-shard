@@ -2,10 +2,16 @@
 const InputHandler = require("./InputHandler");
 const fs           = require("fs");
 
+const colors = {
+    reset: "\x1b[0m",
+    red: "\x1b[31m"
+}
+
 class Console {
 
-    constructor() {
+    constructor(instance) {
         this.handler = new InputHandler();
+        this.instance = instance;
         this.handler.handle();
     }
 
@@ -21,7 +27,9 @@ class Console {
             const args = input.trim().split(/ +/g);
             const command = args.shift().toLowerCase();
 
-            console.log(`found command : ${command} with args: ${args}`);
+            const cmd = this.instance.commands.get(command) || this.instance.aliases.get(command); if (!cmd) return;
+
+            cmd.run(manager, this);
 
         });
 

@@ -1,7 +1,9 @@
 module.exports = {
-    Terminal: require("./src/structures/Instance")
-}
 
-exports.version = "1.0.0";
+    Terminal: require("./src/structures/Instance"),
 
-exports.developers = ["TuxyDev", "DieselGaming"];
+    Directory: __dirname,
+    developers: ["TuxyDev", "DieselGaming"],
+    version: "1.0.0"
+
+};
