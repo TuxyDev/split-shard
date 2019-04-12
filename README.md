@@ -1,4 +1,4 @@
-![https://img.shields.io/discord/566198007310188554.svg?style=for-the-badge](https://discord.gg/XsBXVxF)
+![https://discord.gg/XsBXVxF](https://img.shields.io/discord/566198007310188554.svg?style=for-the-badge)
 # Shard Splitter
 **Our Aim:**
 Our aim, is to make sharding logs easier to understand. We do this by having a new Terminal for whatever shard you like, this then makes it easier to read logs and look up guilds from just one shard.
