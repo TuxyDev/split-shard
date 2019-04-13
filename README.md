@@ -1,4 +1,3 @@
-
 [![Discord server](https://discordapp.com/api/guilds/566198007310188554/embed.png)](https://discord.gg/XsBXVxF)
   
 # Shard Splitter
