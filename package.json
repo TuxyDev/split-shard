@@ -6,6 +6,7 @@
   "scripts": {
     "test": "node test/test.js"
   },
+  "readme": "README.md",
   "dependencies": {
     "discord.js": "^11.4.2"
   },
