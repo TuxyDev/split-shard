@@ -1,6 +1,7 @@
 
 const fs = require("fs");
 
+
 class commandHandler {
 
     constructor(root, instance) {
@@ -14,6 +15,8 @@ class commandHandler {
             const commandName = file.split(".")[0];
             try {
                 const props = require(`${this.dir}/src/commands/${commandName}`);
+                props.name = commandName;
+                
                 this.instance.commands.set(commandName, props);
     
                 if (props.conf && props.conf.aliases) {

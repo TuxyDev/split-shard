@@ -1,6 +1,7 @@
 
 const Console = require("./Console");
 const commandHandler = require("./commandHandler");
+const Util = require("../util");
 
 class Instance {
 
@@ -11,10 +12,11 @@ class Instance {
      */
 
     constructor(root, manager) {
+        this.util = Util;
         this.manager = manager;
-        this.console = new Console(this);
-        this.commands = new Map(); 
-        this.aliases = new Map();
+        this.console = new Console(this, Util);
+        this.commands = new Util.Collection(); 
+        this.aliases = new Util.Collection();
         this.commandHandler = new commandHandler(root, this);
     }
 
@@ -23,6 +25,7 @@ class Instance {
      */
 
     async start() {
+
         await this.commandHandler.loadCommands();
         await this.console.start();
     }
@@ -33,4 +36,8 @@ class Instance {
 
 }
 
-module.exports = Instance;
+const init = (root, manager) => {
+    return new Instance(root, manager);
+}
+
+module.exports = init;
