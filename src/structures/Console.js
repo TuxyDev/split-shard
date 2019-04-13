@@ -1,5 +1,6 @@
 
 const InputHandler = require("./InputHandler");
+const { version } = require('../../package.json');
 
 class Console {
 
@@ -18,13 +19,13 @@ class Console {
         await console.clear();
 
         await console.log(`   
-        ╭───────────────────────────────────────────────────────────────╮
-        │                                                               │
-        │                  Split-Shard Version 1.0.0                    │
-        │               Developed by Tuxy & DieselGaming                │
-        │             ${"\x1b[4m"}https://github.com/TuxyDev/split-shard${"\x1b[0m"}            │
-        │                                                               │
-        ╰───────────────────────────────────────────────────────────────╯`);
+        ${"\x1b[32m"}╭───────────────────────────────────────────────────────────────╮${"\x1b[0m"}
+        ${"\x1b[32m"}│                                                               │${"\x1b[0m"}                                     
+        ${"\x1b[32m"}│${"\x1b[0m"}                  Split-${"\x1b[35m"}Shard${"\x1b[0m"} Version: ${version}                   ${"\x1b[32m"}│${"\x1b[0m"}
+        ${"\x1b[32m"}│${"\x1b[0m"}               Developed by ${"\x1b[34m"}Tuxy${"\x1b[0m"} & ${"\x1b[34m"}DieselGaming${"\x1b[0m"}                ${"\x1b[32m"}│${"\x1b[0m"}
+        ${"\x1b[32m"}│${"\x1b[0m"}             ${"\x1b[4m"}https://github.com/TuxyDev/split-shard${"\x1b[0m"}            ${"\x1b[32m"}│${"\x1b[0m"}
+        ${"\x1b[32m"}│                                                               │${"\x1b[0m"}
+        ${"\x1b[32m"}╰───────────────────────────────────────────────────────────────╯${"\x1b[0m"}`);
 
         this.handler.handle();
         

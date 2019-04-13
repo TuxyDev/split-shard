@@ -22,17 +22,17 @@ Our aim, is to make sharding logs easier to understand. We do this by having a n
 # Example
 ```js
 const { ShardingManager } = require("discord.js");
-const manager = new ShardingManager("./src/instance.js", {token: "YOU_DISCORD_BOT_TOKEN"});
+const manager = new ShardingManager("./YOUR_BOT_FILE", {token: "YOU_DISCORD_BOT_TOKEN"});
 
 manager.spawn("auto");
 
 let Shard = require("split-shard");
-let terminal = new Shard.Terminal();
+let terminal = Shard.Terminal();
 
 terminal.start(manager);
 ```
 
 # Authors
-Tuxy#1290 *(Did all of it)*
+Tuxy#1290
 
-DieselGaming67#1689 *(Literally only made the README)*
+DieselGaming67#1689
