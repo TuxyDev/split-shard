@@ -1,6 +1,5 @@
-<div href="https://discord.gg/XsBXVxF">
-<img src="https://img.shields.io/discord/566198007310188554.svg?style=for-the-badge"/>
-<div/>
+
+[![Discord server](https://discordapp.com/api/guilds/566198007310188554/embed.png?style=banner4)](https://discord.gg/XsBXVxF)
   
 # Shard Splitter
 **Our Aim:**
