@@ -1,5 +1,5 @@
 
-[![Discord server](https://discordapp.com/api/guilds/566198007310188554/embed.png?style=banner2)](https://discord.gg/XsBXVxF)
+[![Discord server](https://discordapp.com/api/guilds/566198007310188554/embed.png?style=banner1)](https://discord.gg/XsBXVxF)
   
 # Shard Splitter
 **Our Aim:**
