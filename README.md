@@ -21,15 +21,10 @@ Our aim, is to make sharding logs easier to understand. We do this by having a n
 
 # Example
 ```js
-const { ShardingManager } = require("discord.js");
-const manager = new ShardingManager("./YOUR_BOT_FILE", {token: "YOU_DISCORD_BOT_TOKEN"});
-
-manager.spawn("auto");
 
 let Shard = require("split-shard");
-let terminal = Shard.Terminal();
-
-terminal.start(manager);
+let terminal = new Shard.Terminal(`./YOUR_BOT_FILE`, {token: "YOU_DISCORD_BOT_TOKEN"})
+.then(manager => manager.start())
 ```
 
 # Authors
