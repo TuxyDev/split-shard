@@ -4,17 +4,16 @@ const fs = require("fs");
 
 class commandHandler {
 
-    constructor(root, instance) {
-        this.dir = root;
+    constructor(instance) {
         this.instance = instance;
     }
 
     loadCommands() {
-        for (let file of fs.readdirSync(`${this.dir}/src/commands/`)) {
+        for (let file of fs.readdirSync(`${__dirname}/../commands/`)) {
             if (!file.endsWith(".js")) return;
             const commandName = file.split(".")[0];
             try {
-                const props = require(`${this.dir}/src/commands/${commandName}`);
+                const props = require(`${__dirname}/../commands/${commandName}`);
                 props.name = commandName;
                 
                 this.instance.commands.set(commandName, props);

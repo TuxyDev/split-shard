@@ -5,6 +5,12 @@ exports.run = (manager, cons, args) => {
         case "--list" :
             console.log("you've been gnomed");
         break;
+
+        case "--kill" :
+            if (!args[1]) {
+                manager.destroyInstance().then(() => console.log("killed {n} shards!"))
+            }
+        break;
     }
 
 }

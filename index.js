@@ -1,8 +1,7 @@
 module.exports = {
 
-    Terminal: (manager) => require("./src/structures/Instance")(__dirname, manager),
+    Terminal: require("./src/structures/Instance"),
 
-    developers: ["TuxyDev", "DieselGaming"],
-    version: "1.0.0"
+    Manager : require("./src/structures/Manager")
 
 };

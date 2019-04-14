@@ -8,4 +8,4 @@ const color = (string, color) => {
     return colors[`${color}`] + string + colors.reset;
 }
 
-module.exports = { color, Collection: require("./structures/Collection") };
+module.exports = { color, Collection: require("discord.js").Collection };
